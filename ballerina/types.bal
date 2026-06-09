@@ -231,7 +231,7 @@ public type MicrosoftGraphSharedWithChannelTeamInfo record {
     MicrosoftGraphConversationMember[] allowedMembers?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.ListWebParts
+# Represents the Queries record for the operation: sitesPagesAsSitePageListWebParts
 public type SitesPagesAsSitePageListWebPartsQueries record {
     # Skip the first n items
     @http:Query {name: "$skip"}
@@ -602,7 +602,7 @@ public type MicrosoftGraphSitePageCollectionResponse record {
     MicrosoftGraphSitePage[] value?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.GetWebParts
+# Represents the Queries record for the operation: sitesPagesAsSitePageGetWebParts
 public type SitesPagesAsSitePageGetWebPartsQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -625,7 +625,7 @@ public type MicrosoftGraphUserStorage record {
 # Enum of icon types available to represent a time-off reason (e.g., car, plane, doctor).
 public type MicrosoftGraphTimeOffReasonIconType "none"|"car"|"calendar"|"running"|"plane"|"firstAid"|"doctor"|"notWorking"|"clock"|"juryDuty"|"globe"|"cup"|"phone"|"weather"|"umbrella"|"piggyBank"|"dog"|"cake"|"trafficCone"|"pin"|"sunny"|"unknownFutureValue";
 
-# Represents the Queries record for the operation: sites.pages.lastModifiedByUser.GetMailboxSettings
+# Represents the Queries record for the operation: sitesPagesLastModifiedByUserGetMailboxSettings
 public type SitesPagesLastModifiedByUserGetMailboxSettingsQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -745,7 +745,7 @@ public type MicrosoftGraphUserPurpose "user"|"linked"|"shared"|"room"|"equipment
 # Enum indicating the type of a Teams tag: standard or unknownFutureValue.
 public type MicrosoftGraphTeamworkTagType "standard"|"unknownFutureValue";
 
-# Represents the Headers record for the operation: sites.DeletePages
+# Represents the Headers record for the operation: sitesDeletePages
 public type SitesDeletePagesHeaders record {
     # ETag
     @http:Header {name: "If-Match"}
@@ -1303,7 +1303,7 @@ public type MicrosoftGraphItemAnalytics record {
     MicrosoftGraphItemActivityStat|record {} allTime?;
 };
 
-# Represents the Queries record for the operation: sites.pages.createdByUser.ServiceProvisioningErrors.GetCount-7e89
+# Represents the Queries record for the operation: sitesPagesCreatedByUserServiceProvisioningErrorsGetCount7e89
 public type SitesPagesCreatedByUserServiceProvisioningErrorsGetCount7e89Queries record {
     # Filter items by property values
     @http:Query {name: "$filter"}
@@ -1357,7 +1357,7 @@ public type MicrosoftGraphSharePointIdentity record {
     string? loginName?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.horizontalSections.columns.GetCount-9382
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutHorizontalSectionsColumnsGetCount9382
 public type SitesPagesAsSitePageCanvasLayoutHorizontalSectionsColumnsGetCount9382Queries record {
     # Filter items by property values
     @http:Query {name: "$filter"}
@@ -1568,7 +1568,7 @@ public type MicrosoftGraphAppRoleAssignment record {
     string? principalType?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.horizontalSections.GetCount-38fc
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutHorizontalSectionsGetCount38fc
 public type SitesPagesAsSitePageCanvasLayoutHorizontalSectionsGetCount38fcQueries record {
     # Filter items by property values
     @http:Query {name: "$filter"}
@@ -1634,7 +1634,7 @@ public type MicrosoftGraphDeviceCompliancePolicyState record {
     decimal settingCount?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.GetLastModifiedByUser
+# Represents the Queries record for the operation: sitesPagesAsSitePageGetLastModifiedByUser
 public type SitesPagesAsSitePageGetLastModifiedByUserQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -1970,7 +1970,7 @@ public type MicrosoftGraphOperationError record {
     string? message?;
 };
 
-# Represents the Headers record for the operation: sites.pages.AsSitePage.canvasLayout.horizontalSections.columns.DeleteWebparts
+# Represents the Headers record for the operation: sitesPagesAsSitePageCanvasLayoutHorizontalSectionsColumnsDeleteWebparts
 public type SitesPagesAsSitePageCanvasLayoutHorizontalSectionsColumnsDeleteWebpartsHeaders record {
     # ETag
     @http:Header {name: "If-Match"}
@@ -1980,7 +1980,7 @@ public type SitesPagesAsSitePageCanvasLayoutHorizontalSectionsColumnsDeleteWebpa
 # Enumeration of color values assignable to a category, ranging from none to preset24.
 public type MicrosoftGraphCategoryColor "none"|"preset0"|"preset1"|"preset2"|"preset3"|"preset4"|"preset5"|"preset6"|"preset7"|"preset8"|"preset9"|"preset10"|"preset11"|"preset12"|"preset13"|"preset14"|"preset15"|"preset16"|"preset17"|"preset18"|"preset19"|"preset20"|"preset21"|"preset22"|"preset23"|"preset24";
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.verticalSection.ListWebparts
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutVerticalSectionListWebparts
 public type SitesPagesAsSitePageCanvasLayoutVerticalSectionListWebpartsQueries record {
     # Skip the first n items
     @http:Query {name: "$skip"}
@@ -2050,7 +2050,7 @@ public type MicrosoftGraphTeamMemberSettings record {
     boolean? allowCreateUpdateChannels?;
 };
 
-# Represents the Headers record for the operation: sites.pages.AsSitePage.DeleteCanvasLayout
+# Represents the Headers record for the operation: sitesPagesAsSitePageDeleteCanvasLayout
 public type SitesPagesAsSitePageDeleteCanvasLayoutHeaders record {
     # ETag
     @http:Header {name: "If-Match"}
@@ -2131,14 +2131,14 @@ public type MicrosoftGraphPlannerUser record {
     MicrosoftGraphPlannerTask[] tasks?;
 };
 
-# Represents the Headers record for the operation: sites.pages.AsSitePage.canvasLayout.horizontalSections.DeleteColumns
+# Represents the Headers record for the operation: sitesPagesAsSitePageCanvasLayoutHorizontalSectionsDeleteColumns
 public type SitesPagesAsSitePageCanvasLayoutHorizontalSectionsDeleteColumnsHeaders record {
     # ETag
     @http:Header {name: "If-Match"}
     string ifMatch?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.horizontalSections.columns.GetWebparts
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutHorizontalSectionsColumnsGetWebparts
 public type SitesPagesAsSitePageCanvasLayoutHorizontalSectionsColumnsGetWebpartsQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -2389,7 +2389,7 @@ public type FinishingsAnyOf22 record {
 public type FinishingsAnyOf21 record {
 };
 
-# Represents the Queries record for the operation: sites.GetPages
+# Represents the Queries record for the operation: sitesGetPages
 public type SitesGetPagesQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -2413,7 +2413,7 @@ public type MicrosoftGraphSharingDetail record {
     string? sharedDateTime?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.GetHorizontalSections
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutGetHorizontalSections
 public type SitesPagesAsSitePageCanvasLayoutGetHorizontalSectionsQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -2441,7 +2441,7 @@ public type MicrosoftGraphOfficeGraphInsights record {
     MicrosoftGraphUsedInsight[] used?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.horizontalSections.columns.ListWebparts
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutHorizontalSectionsColumnsListWebparts
 public type SitesPagesAsSitePageCanvasLayoutHorizontalSectionsColumnsListWebpartsQueries record {
     # Skip the first n items
     @http:Query {name: "$skip"}
@@ -2503,7 +2503,7 @@ public type MicrosoftGraphFileSystemInfo record {
     string? createdDateTime?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.horizontalSections.GetColumns
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutHorizontalSectionsGetColumns
 public type SitesPagesAsSitePageCanvasLayoutHorizontalSectionsGetColumnsQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -2685,7 +2685,7 @@ public type MicrosoftGraphNotebook record {
     MicrosoftGraphOnenoteSection[] sections?;
 };
 
-# Represents the Queries record for the operation: sites.pages.lastModifiedByUser.ListServiceProvisioningErrors
+# Represents the Queries record for the operation: sitesPagesLastModifiedByUserListServiceProvisioningErrors
 public type SitesPagesLastModifiedByUserListServiceProvisioningErrorsQueries record {
     # Skip the first n items
     @http:Query {name: "$skip"}
@@ -2793,7 +2793,7 @@ public type MicrosoftGraphUserProtectionScopeContainer record {
     *MicrosoftGraphEntity;
 };
 
-# Represents the Queries record for the operation: sites.pages.GetCount-3155
+# Represents the Queries record for the operation: sitesPagesGetCount3155
 public type SitesPagesGetCount3155Queries record {
     # Filter items by property values
     @http:Query {name: "$filter"}
@@ -2910,7 +2910,7 @@ public type MicrosoftGraphMetaDataKeyStringPair record {
     string? 'key?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.verticalSection.webparts.GetCount-185f
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutVerticalSectionWebpartsGetCount185f
 public type SitesPagesAsSitePageCanvasLayoutVerticalSectionWebpartsGetCount185fQueries record {
     # Filter items by property values
     @http:Query {name: "$filter"}
@@ -3440,7 +3440,7 @@ public type MicrosoftGraphItemInsights record {
     *MicrosoftGraphOfficeGraphInsights;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.lastModifiedByUser.ServiceProvisioningErrors.GetCount-9ea6
+# Represents the Queries record for the operation: sitesPagesAsSitePageLastModifiedByUserServiceProvisioningErrorsGetCount9ea6
 public type SitesPagesAsSitePageLastModifiedByUserServiceProvisioningErrorsGetCount9ea6Queries record {
     # Filter items by property values
     @http:Query {name: "$filter"}
@@ -3463,7 +3463,7 @@ public type MicrosoftGraphDocumentSetContent record {
 # Enumeration indicating the current migration state: in progress, completed, or unknown.
 public type MicrosoftGraphMigrationMode "inProgress"|"completed"|"unknownFutureValue";
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.createdByUser.ServiceProvisioningErrors.GetCount-a4bd
+# Represents the Queries record for the operation: sitesPagesAsSitePageCreatedByUserServiceProvisioningErrorsGetCountA4bd
 public type SitesPagesAsSitePageCreatedByUserServiceProvisioningErrorsGetCountA4bdQueries record {
     # Filter items by property values
     @http:Query {name: "$filter"}
@@ -3609,7 +3609,7 @@ public type MicrosoftGraphDevice record {
     string? enrollmentType?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.lastModifiedByUser.ListServiceProvisioningErrors
+# Represents the Queries record for the operation: sitesPagesAsSitePageLastModifiedByUserListServiceProvisioningErrors
 public type SitesPagesAsSitePageLastModifiedByUserListServiceProvisioningErrorsQueries record {
     # Skip the first n items
     @http:Query {name: "$skip"}
@@ -3637,7 +3637,7 @@ public type SitesPagesAsSitePageLastModifiedByUserListServiceProvisioningErrorsQ
     ("createdDateTime"|"isResolved"|"serviceInstance")[] dollarSelect?;
 };
 
-# Represents the Queries record for the operation: sites.ListPages
+# Represents the Queries record for the operation: sitesListPages
 public type SitesListPagesQueries record {
     # Skip the first n items
     @http:Query {name: "$skip"}
@@ -3770,7 +3770,7 @@ public type MicrosoftGraphAppIdentity record {
     string? servicePrincipalId?;
 };
 
-# Represents the Queries record for the operation: sites.ListPages.AsSitePage
+# Represents the Queries record for the operation: sitesListPagesAsSitePage
 public type SitesListPagesAsSitePageQueries record {
     # Skip the first n items
     @http:Query {name: "$skip"}
@@ -3872,7 +3872,7 @@ public type MicrosoftGraphGroupLifecyclePolicy record {
     string? managedGroupTypes?;
 };
 
-# Represents the Queries record for the operation: sites.GetPages.AsSitePage
+# Represents the Queries record for the operation: sitesGetPagesAsSitePage
 public type SitesGetPagesAsSitePageQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -3882,7 +3882,7 @@ public type SitesGetPagesAsSitePageQueries record {
     ("id"|"createdBy"|"createdDateTime"|"description"|"eTag"|"lastModifiedBy"|"lastModifiedDateTime"|"name"|"parentReference"|"webUrl"|"pageLayout"|"publishingState"|"title"|"createdByUser"|"lastModifiedByUser")[] dollarSelect?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.horizontalSections.columns.webparts.GetCount-bbb9
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutHorizontalSectionsColumnsWebpartsGetCountBbb9
 public type SitesPagesAsSitePageCanvasLayoutHorizontalSectionsColumnsWebpartsGetCountBbb9Queries record {
     # Filter items by property values
     @http:Query {name: "$filter"}
@@ -4173,7 +4173,7 @@ public type MicrosoftGraphResourceVisualization record {
     string? containerDisplayName?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.ListHorizontalSections
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutListHorizontalSections
 public type SitesPagesAsSitePageCanvasLayoutListHorizontalSectionsQueries record {
     # Skip the first n items
     @http:Query {name: "$skip"}
@@ -4201,7 +4201,7 @@ public type SitesPagesAsSitePageCanvasLayoutListHorizontalSectionsQueries record
     ("id"|"emphasis"|"layout"|"columns")[] dollarSelect?;
 };
 
-# Represents the Queries record for the operation: sites.Pages.GetCount.AsSitePage-c4ed
+# Represents the Queries record for the operation: sitesPagesGetCountAsSitePageC4ed
 public type SitesPagesGetCountAsSitePageC4edQueries record {
     # Filter items by property values
     @http:Query {name: "$filter"}
@@ -4504,7 +4504,7 @@ public type MicrosoftGraphIdentity record {
     string? id?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.GetVerticalSection
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutGetVerticalSection
 public type SitesPagesAsSitePageCanvasLayoutGetVerticalSectionQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -4873,7 +4873,7 @@ public type MicrosoftGraphResourceSpecificPermissionGrant record {
     string? clientAppId?;
 };
 
-# Represents the Queries record for the operation: sites.pages.createdByUser.GetMailboxSettings
+# Represents the Queries record for the operation: sitesPagesCreatedByUserGetMailboxSettings
 public type SitesPagesCreatedByUserGetMailboxSettingsQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -5190,7 +5190,7 @@ public type MicrosoftGraphContact record {
 
 public type MicrosoftGraphLicenseAssignmentStateDisabledPlansItemsString string?;
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.createdByUser.ListServiceProvisioningErrors
+# Represents the Queries record for the operation: sitesPagesAsSitePageCreatedByUserListServiceProvisioningErrors
 public type SitesPagesAsSitePageCreatedByUserListServiceProvisioningErrorsQueries record {
     # Skip the first n items
     @http:Query {name: "$skip"}
@@ -5557,14 +5557,14 @@ public type MicrosoftGraphAllowedLobbyAdmitterRoles "organizerAndCoOrganizersAnd
 public type ScalingsAnyOf2 record {
 };
 
-# Represents the Headers record for the operation: sites.pages.AsSitePage.canvasLayout.DeleteHorizontalSections
+# Represents the Headers record for the operation: sitesPagesAsSitePageCanvasLayoutDeleteHorizontalSections
 public type SitesPagesAsSitePageCanvasLayoutDeleteHorizontalSectionsHeaders record {
     # ETag
     @http:Header {name: "If-Match"}
     string ifMatch?;
 };
 
-# Represents the Headers record for the operation: sites.pages.AsSitePage.canvasLayout.DeleteVerticalSection
+# Represents the Headers record for the operation: sitesPagesAsSitePageCanvasLayoutDeleteVerticalSection
 public type SitesPagesAsSitePageCanvasLayoutDeleteVerticalSectionHeaders record {
     # ETag
     @http:Header {name: "If-Match"}
@@ -5580,7 +5580,7 @@ public type MicrosoftGraphWorkbookChartGridlines record {
     MicrosoftGraphWorkbookChartGridlinesFormat|record {} format?;
 };
 
-# Represents the Queries record for the operation: sites.pages.GetCreatedByUser
+# Represents the Queries record for the operation: sitesPagesGetCreatedByUser
 public type SitesPagesGetCreatedByUserQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -5806,7 +5806,7 @@ public type MicrosoftGraphWorkbookNamedItem record {
     MicrosoftGraphJson|record {} value?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.GetCanvasLayout
+# Represents the Queries record for the operation: sitesPagesAsSitePageGetCanvasLayout
 public type SitesPagesAsSitePageGetCanvasLayoutQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -6214,7 +6214,7 @@ public type MicrosoftGraphTeam record {
     MicrosoftGraphTeamMemberSettings|record {} memberSettings?;
 };
 
-# Represents the Headers record for the operation: sites.pages.AsSitePage.canvasLayout.verticalSection.DeleteWebparts
+# Represents the Headers record for the operation: sitesPagesAsSitePageCanvasLayoutVerticalSectionDeleteWebparts
 public type SitesPagesAsSitePageCanvasLayoutVerticalSectionDeleteWebpartsHeaders record {
     # ETag
     @http:Header {name: "If-Match"}
@@ -6547,7 +6547,7 @@ public type MicrosoftGraphPlannerBucketTaskBoardTaskFormat record {
 # Enum indicating the Windows setting type: roaming, backup, or unknownFutureValue.
 public type MicrosoftGraphWindowsSettingType "roaming"|"backup"|"unknownFutureValue";
 
-# Represents the Headers record for the operation: sites.pages.AsSitePage.DeleteWebParts
+# Represents the Headers record for the operation: sitesPagesAsSitePageDeleteWebParts
 public type SitesPagesAsSitePageDeleteWebPartsHeaders record {
     # ETag
     @http:Header {name: "If-Match"}
@@ -6581,7 +6581,7 @@ public type MicrosoftGraphWebauthnPublicKeyCredential record {
     MicrosoftGraphWebauthnAuthenticationExtensionsClientOutputs|record {} clientExtensionResults?;
 };
 
-# Represents the Queries record for the operation: sites.pages.lastModifiedByUser.ServiceProvisioningErrors.GetCount-6cf6
+# Represents the Queries record for the operation: sitesPagesLastModifiedByUserServiceProvisioningErrorsGetCount6cf6
 public type SitesPagesLastModifiedByUserServiceProvisioningErrorsGetCount6cf6Queries record {
     # Filter items by property values
     @http:Query {name: "$filter"}
@@ -6693,7 +6693,7 @@ public type MicrosoftGraphWorkbookTable record {
     MicrosoftGraphWorkbookWorksheet|record {} worksheet?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.verticalSection.GetWebparts
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutVerticalSectionGetWebparts
 public type SitesPagesAsSitePageCanvasLayoutVerticalSectionGetWebpartsQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -6713,7 +6713,7 @@ public type MicrosoftGraphChatMessageMention record {
     MicrosoftGraphChatMessageMentionedIdentitySet|record {} mentioned?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.createdByUser.GetMailboxSettings
+# Represents the Queries record for the operation: sitesPagesAsSitePageCreatedByUserGetMailboxSettings
 public type SitesPagesAsSitePageCreatedByUserGetMailboxSettingsQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -7052,7 +7052,7 @@ public type MicrosoftGraphHorizontalSectionCollectionResponse record {
 # Enum indicating the sign-in readiness state of an authentication method for a user.
 public type MicrosoftGraphAuthenticationMethodSignInState "notSupported"|"notAllowedByPolicy"|"notEnabled"|"phoneNumberNotUnique"|"ready"|"notConfigured"|"unknownFutureValue";
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.canvasLayout.horizontalSections.ListColumns
+# Represents the Queries record for the operation: sitesPagesAsSitePageCanvasLayoutHorizontalSectionsListColumns
 public type SitesPagesAsSitePageCanvasLayoutHorizontalSectionsListColumnsQueries record {
     # Skip the first n items
     @http:Query {name: "$skip"}
@@ -7514,7 +7514,7 @@ public type MicrosoftGraphWorkHoursAndLocationsSetting record {
     MicrosoftGraphMaxWorkLocationDetails maxSharedWorkLocationDetails?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.webParts.GetCount-eb99
+# Represents the Queries record for the operation: sitesPagesAsSitePageWebPartsGetCountEb99
 public type SitesPagesAsSitePageWebPartsGetCountEb99Queries record {
     # Filter items by property values
     @http:Query {name: "$filter"}
@@ -7615,7 +7615,7 @@ public type MicrosoftGraphImportance "low"|"normal"|"high";
 # Enumeration of possible time card states: clockedIn, onBreak, clockedOut, or unknownFutureValue.
 public type MicrosoftGraphTimeCardState "clockedIn"|"onBreak"|"clockedOut"|"unknownFutureValue";
 
-# Represents the Queries record for the operation: sites.pages.GetLastModifiedByUser
+# Represents the Queries record for the operation: sitesPagesGetLastModifiedByUser
 public type SitesPagesGetLastModifiedByUserQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -7675,7 +7675,7 @@ public type MicrosoftGraphChatMessageHistoryItem record {
     MicrosoftGraphChatMessageActions actions?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.lastModifiedByUser.GetMailboxSettings
+# Represents the Queries record for the operation: sitesPagesAsSitePageLastModifiedByUserGetMailboxSettings
 public type SitesPagesAsSitePageLastModifiedByUserGetMailboxSettingsQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}
@@ -7689,7 +7689,7 @@ public type SitesPagesAsSitePageLastModifiedByUserGetMailboxSettingsQueries reco
 public type MicrosoftGraphPlannerExternalReferences record {
 };
 
-# Represents the Queries record for the operation: sites.pages.createdByUser.ListServiceProvisioningErrors
+# Represents the Queries record for the operation: sitesPagesCreatedByUserListServiceProvisioningErrors
 public type SitesPagesCreatedByUserListServiceProvisioningErrorsQueries record {
     # Skip the first n items
     @http:Query {name: "$skip"}
@@ -8286,7 +8286,7 @@ public type MicrosoftGraphTeamsAppAuthorization record {
     string? clientAppId?;
 };
 
-# Represents the Queries record for the operation: sites.pages.AsSitePage.GetCreatedByUser
+# Represents the Queries record for the operation: sitesPagesAsSitePageGetCreatedByUser
 public type SitesPagesAsSitePageGetCreatedByUserQueries record {
     # Expand related entities
     @http:Query {name: "$expand"}

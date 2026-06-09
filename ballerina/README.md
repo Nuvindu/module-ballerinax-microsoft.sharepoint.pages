@@ -63,8 +63,6 @@ configurable string clientId = ?;
 configurable string clientSecret = ?;
 configurable string tokenUrl = ?;
 
-
-```ballerina
 final pages:Client sharepointPagesClient = check new({
     auth: {
         clientId,
@@ -83,8 +81,8 @@ Now, utilize the available connector operations.
 ```ballerina
 public function main() returns error? {
     string siteId = "add-the-site-id";
-    
-    pages:MicrosoftGraphBaseSitePage response = check sharePointClient->/[siteId]/pages();
+
+    pages:MicrosoftGraphBaseSitePageCollectionResponse response = check sharePointClient->sitesListPages(siteId);
 }
 ```
 
@@ -97,7 +95,6 @@ bal run
 ## Examples
 The `microsoft.sharepoint.pages` connector provides practical examples illustrating usage in various scenarios. Explore these [examples](https://github.com/ballerina-platform/module-ballerinax-microsoft.sharepoint.pages/tree/main/examples), covering the following use cases:
 
-1. [Page author timezone audit](https://github.com/ballerina-platform/module-ballerinax-microsoft.sharepoint.pages/tree/main/examples/page-author-timezone-audit) - Demonstrates how to audit SharePoint page authors and their associated timezone information.
-2. [Vertical section webpart audit](https://github.com/ballerina-platform/module-ballerinax-microsoft.sharepoint.pages/tree/main/examples/vertical-section-webpart-audit) - Illustrates how to audit web parts within vertical sections across SharePoint pages.
-3. [Webpart audit cleanup](https://github.com/ballerina-platform/module-ballerinax-microsoft.sharepoint.pages/tree/main/examples/webpart-audit-cleanup) - Demonstrates how to identify and clean up web parts on SharePoint pages based on audit results.
-4. [Sharepoint page audit enrichment](https://github.com/ballerina-platform/module-ballerinax-microsoft.sharepoint.pages/tree/main/examples/sharepoint-page-audit-enrichment) - Illustrates how to enrich SharePoint page audit data with additional metadata and contextual information.
+1. [Vertical section webpart audit](https://github.com/ballerina-platform/module-ballerinax-microsoft.sharepoint.pages/tree/main/examples/vertical-section-webpart-audit) - Illustrates how to audit web parts within vertical sections across SharePoint pages.
+2. [Webpart audit cleanup](https://github.com/ballerina-platform/module-ballerinax-microsoft.sharepoint.pages/tree/main/examples/webpart-audit-cleanup) - Demonstrates how to identify and clean up web parts on SharePoint pages based on audit results.
+3. [Sharepoint page audit enrichment](https://github.com/ballerina-platform/module-ballerinax-microsoft.sharepoint.pages/tree/main/examples/sharepoint-page-audit-enrichment) - Illustrates how to enrich SharePoint page audit data with additional metadata and contextual information.
